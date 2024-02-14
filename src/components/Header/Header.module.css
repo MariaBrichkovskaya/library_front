@@ -1,0 +1,19 @@
+.header {
+    grid-area: header;
+    background-color: #fdddc8;
+}
+
+
+.header .img {
+    grid-area: img;
+    max-height: 100px;
+
+}
+
+.header .title {
+    font-size: 80px;
+    margin-top: -110px;
+    text-align: center;
+    font-family: 'Snell Roundhand', cursive;
+    color: #333;
+}
