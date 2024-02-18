@@ -1,11 +1,12 @@
 import history from './History.module.css'
 import HistoryItem from './HistoryItem/HistoryItem'
-const History = () => {
+const History = (props) => {
+
+    let booksElements = props.state.history.map(el => <HistoryItem name={el.name} author={el.author} />)
     return (
         <div>
-            <HistoryItem name="book1" author="author1" date="today" />
-            <HistoryItem name="book2" author="author2" date="21.01" />
-            <HistoryItem name="book3" author="author3" date="2.02" /></div>
+            {booksElements}
+        </div>
     )
 }
 export default History

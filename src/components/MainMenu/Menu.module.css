@@ -1,16 +1,22 @@
-.menu {
+.nav {
     grid-area: menu;
     background-color: rgb(163, 107, 163);
+    padding: 20px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90vh;
+    height: 85vh;
 }
 
-.menu a {
+.item a {
     display: block;
     background-color: #8a245c;
-    color: #3f0826;
+    color: white;
     padding: 8px 16px;
     text-decoration: none;
+}
+
+.item a.activeLink {
+    background-color: #000;
 }

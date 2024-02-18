@@ -1,7 +1,7 @@
 import item from './AuthorItem.module.css'
-const BookItem = (props) => {
+const AuthorItem = (props) => {
     return (
-        <div className={item.item}>{props.name} {props.author} {props.date}</div>
+        <div className={item.item}>{props.name} {props.surname}</div>
     )
 }
-export default BookItem
+export default AuthorItem
